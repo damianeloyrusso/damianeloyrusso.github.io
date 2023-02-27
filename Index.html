@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV HTML CSS JS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="#resumen">Home</a></li>
+                <li> <a href="#cuerpo">Antecedentes</a></li>
+                <li> <a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="resumen">
+            <h1> CURRICULUM VITAE</h1>
+            <div class="perfil">
+                <img src="Images/Foto de perfil.jpg" alt="">
+            </div>
+            <h2> Damián Russo</h2>
+            <h3> Mg. en Dirección de Empresas </h3>
+            <div class="parrafo">
+                <h4> Docente experto en gamificación y simulación. Orientado a casos de negocios, con amplia experiencia en universidades tanto públicas como privadas. </h4>
+                <h4> Trayectoria en carreras de grado, posgrado y maestría. Tutor de tesis y director de plan de negocios</h4>
+            </div>
+        </section>
+        <section id="cuerpo">
+            <h2> Formación académica</h2>
+            <div class="antecedentes">
+                <h3>Licenciado en Administración de Empresas</h3>
+                <h3>Magíster en Dirección de Empresas</h3>
+                <h3>Posgrado en Docencia Universitaria</h3>
+            </div>
+
+            <h2> Cargos docentes </h2>
+            <div class="listadocargos">
+                <div class="cargo">
+                    <img src="Images/InfoIntegrada.jpg" alt="">
+                    <p> UATE - Profesor adjunto de Información Integrada de la Empresa </p>
+                </div>
+                <div class="cargo">
+                    <img src="Images/Finanzas.png" alt="">
+                    <p> UAF - Profesor asociado de Finanzas Corporativas </p>
+                </div>
+
+                <div class="cargo">
+                    <img src="Images/GerenciaOp.png" alt="">
+                    <p> UTE - Profesor adjunto de Gerencia de Operaciones </p>
+                </div>
+
+                <div class="cargo">
+                    <img src="Images/Innova.png" alt="">
+                    <p> UTDY - Jefe de Trabajos Prácticos en Innovación en valor </p>
+                </div>
+
+            </div>
+
+            
+        </section>
+        <section id="contacto">
+            
+            <H2> Ingrese sus datos y me comunicaré a la brevedad </H2>
+            <form id="formcontacto" class="form1" action="">
+                <div class="marcoform">
+
+                    <div class="camposform">
+                        <label> Institución</label>
+                        <input type="text" placeholder="Institución">
+                    </div>
+
+                    <div class="camposform">
+                        <label> País</label>
+                        <input type="text" placeholder="País">
+                    </div>
+             
+              
+                    <div class="camposform">
+                        <label> Nombre </label>
+                        <input type="text" id="Nombre" placeholder="Nombre">
+                    </div>
+
+                    <div class="camposform">
+                        <label> Apellido</label>
+                        <input type="text" id="Apellido" placeholder="Apellido">
+                    </div>
+                
+                    <div class="camposform">
+                        <label> E-mail</label>
+                        <input type="email" id="email" placeholder="Direccion de e-mail">
+                    </div>
+
+                    <div class="camposform">
+                        <label> Telefono </label>
+                        <input type="tel" id="tel" placeholder="Teléfono">
+                    </div>
+
+                    <div class="camposform">
+                        <label> Mensaje</label> </label>
+                        <textarea name="mensaje" id="msge" cols="30" rows="4" placeholder="Motivo del contacto" ></textarea>
+                    </div>
+
+                    <div class="camposformbutton">
+                        <button type="submit" class="btnsuccess" value="Validar correo" onclick="validarcorreo(document.getElementById('email').value)"\> Enviar contacto</button>
+                        <p class="atencion" id="atencion"></p>
+                    </div>
+
+
+            </div>
+
+            </form>
+        </section>
+    <script src="form.js"></script>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
